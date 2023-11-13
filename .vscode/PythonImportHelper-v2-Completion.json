@@ -1,0 +1,358 @@
+[
+    {
+        "label": "Input",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "Output",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "no_update",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "html",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "Dash",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "dcc",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "html",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "Input",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "Output",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "callback",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "Input",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "Output",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "callback",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "pyvis",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyvis",
+        "description": "pyvis",
+        "detail": "pyvis",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "DevelopmentConfig",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "KnowledgeGraphCreator",
+        "importPath": "utils.graphhandler",
+        "description": "utils.graphhandler",
+        "isExtraImport": true,
+        "detail": "utils.graphhandler",
+        "documentation": {}
+    },
+    {
+        "label": "ChatCompletionJSON",
+        "importPath": "utils.queryhandler",
+        "description": "utils.queryhandler",
+        "isExtraImport": true,
+        "detail": "utils.queryhandler",
+        "documentation": {}
+    },
+    {
+        "label": "rdflib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rdflib",
+        "description": "rdflib",
+        "detail": "rdflib",
+        "documentation": {}
+    },
+    {
+        "label": "kglab",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "kglab",
+        "description": "kglab",
+        "detail": "kglab",
+        "documentation": {}
+    },
+    {
+        "label": "openai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "openai",
+        "description": "openai",
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "os,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.",
+        "description": "os.",
+        "detail": "os.",
+        "documentation": {}
+    },
+    {
+        "label": "utils.callbackhandler",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "utils.callbackhandler",
+        "description": "utils.callbackhandler",
+        "detail": "utils.callbackhandler",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "ChatCompletionJSON",
+        "importPath": "utils.query_handler",
+        "description": "utils.query_handler",
+        "isExtraImport": true,
+        "detail": "utils.query_handler",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "register_callbacks",
+        "kind": 2,
+        "importPath": "utils.callbackhandler",
+        "description": "utils.callbackhandler",
+        "peekOfCode": "def register_callbacks(app):\n    @app.callback(\n        Output('graph-div', 'children'),\n        [Input('graph-creator', 'n_clicks')]\n    )\n    def display_graph(n_clicks):\n        if n_clicks is None:\n            return no_update\n        else:\n            query = ChatCompletionJSON(200)",
+        "detail": "utils.callbackhandler",
+        "documentation": {}
+    },
+    {
+        "label": "KnowledgeGraphCreator",
+        "kind": 6,
+        "importPath": "utils.graphhandler",
+        "description": "utils.graphhandler",
+        "peekOfCode": "class KnowledgeGraphCreator:\n    def __init__(self, locations, relationships):\n        self.locations = locations \n        self.relationships = relationships\n        self.kg = kglab.KnowledgeGraph()\n    def create_knowledge_graph(self):\n        if os.path.isfile(\"master_thesis.ttl\"):\n            self.kg.load_rdf(\"master_thesis.ttl\")\n            print(\"previous RDF loaded\")\n        LOC = rdflib.Namespace(\"http://example.org/locations/\")",
+        "detail": "utils.graphhandler",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "kind": 6,
+        "importPath": "utils.queryhandler",
+        "description": "utils.queryhandler",
+        "peekOfCode": "class Query:\n    def __init__(self):\n        self.model = Config.OPENAI_MODEL\n        self.api_key = Config.SECRET_KEY\n    def send_query(self, prompt: str):\n        raise NotImplementedError(\"Subclasses must implement this method.\")\nclass ChatCompletionJSON(Query):\n    def __init__(self, tokens: int):\n        super().__init__()\n        self.tokens = tokens ",
+        "detail": "utils.queryhandler",
+        "documentation": {}
+    },
+    {
+        "label": "ChatCompletionJSON",
+        "kind": 6,
+        "importPath": "utils.queryhandler",
+        "description": "utils.queryhandler",
+        "peekOfCode": "class ChatCompletionJSON(Query):\n    def __init__(self, tokens: int):\n        super().__init__()\n        self.tokens = tokens \n    def send_query(self, prompt: str):\n        openai.api_key = self.api_key\n        full_prompt = Config.JSON_PROMPT\n        response = openai.Completion.create(\n            engine = self.model,\n            prompt = full_prompt,",
+        "detail": "utils.queryhandler",
+        "documentation": {}
+    },
+    {
+        "label": "ChatCompletionOther",
+        "kind": 6,
+        "importPath": "utils.queryhandler",
+        "description": "utils.queryhandler",
+        "peekOfCode": "class ChatCompletionOther(Query):\n    def __init__(self, tokens: int):\n        super().__init__()\n        self.tokens = tokens \n    def send_query(self, prompt: str):\n        openai.api_key = self.api_key\n        full_prompt = Config.OTHER_PROMPT\n        response = openai.Completion.create(\n            engine = self.model,\n            prompt = full_prompt,",
+        "detail": "utils.queryhandler",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Dash(__name__)    \napp.server.config.from_object(DevelopmentConfig)\napp.suppress_callback_exceptions = True\nif os.path.isfile(\"./utils/kg.html\"):\n    app.layout = html.Div([\n        html.Iframe(srcDoc=open(\"kg.html\", \"r\").read(), width=\"100%\", height=\"600px\")\n    ], id=\"graph-div\")\nelse:\n    app.layout = html.Div([\n        html.P(\"No HTML file exists here.\"),",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.suppress_callback_exceptions",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.suppress_callback_exceptions = True\nif os.path.isfile(\"./utils/kg.html\"):\n    app.layout = html.Div([\n        html.Iframe(srcDoc=open(\"kg.html\", \"r\").read(), width=\"100%\", height=\"600px\")\n    ], id=\"graph-div\")\nelse:\n    app.layout = html.Div([\n        html.P(\"No HTML file exists here.\"),\n        html.Button('Submit', id='graph-creator', n_clicks=0)\n    ], id=\"graph-div\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "class Config(object):\n    SECRET_KEY = os.getenv(\"OPENAI_KEY\")\n    DEBUG = False\n    TESTING = False \n    OPENAI_MODEL = 'text-davinci-003'\n    JSON_PROMPT = \"\"\"\n    I am an AI model and I have been trained to extract and structure information about locations and their relationships from text and all locations bordering the mentioned locations, including the geospatial relation. The output will be in a valid JSON format using double quotes, not single. Do not specify you are writing the output, only write the JSON.  Here are a few examples:\n    Text: \"Paris is in France. It is next to Versailles.\"\n    {\n      \"locations\": [",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "ProductionConfig",
+        "kind": 6,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "class ProductionConfig(Config):\n    DATABASE_URI = os.environ.get('DATABASE_URI')\nclass DevelopmentConfig(Config):\n    DEBUG = True\nclass TestingConfig(Config):\n    TESTING = True",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "DevelopmentConfig",
+        "kind": 6,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "class DevelopmentConfig(Config):\n    DEBUG = True\nclass TestingConfig(Config):\n    TESTING = True",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "TestingConfig",
+        "kind": 6,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "class TestingConfig(Config):\n    TESTING = True",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 5,
+        "importPath": "index",
+        "description": "index",
+        "peekOfCode": "query = ChatCompletionJSON(\"gpt-3.5-turbo\", 100)\n# @app.callback(\n#     Output('my-output', 'children'),\n#     Input('my-input', 'value')\n# )\n# def update_output_div(input_value):\n#     response = query.send_query()\n#     return response",
+        "detail": "index",
+        "documentation": {}
+    }
+]

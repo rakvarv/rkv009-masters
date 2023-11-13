@@ -1,0 +1,16 @@
+@prefix loc: <http://example.org/locations/> .
+@prefix rel: <http://example.org/relationships/> .
+
+loc:Bodø a loc:location ;
+    rel:isIn loc:Nordland .
+
+loc:Stavanger a loc:location ;
+    rel:isIn loc:Norge,
+        loc:Vestland .
+
+loc:Nordland a loc:location .
+
+loc:Norge a loc:location .
+
+loc:Vestland a loc:location .
+
