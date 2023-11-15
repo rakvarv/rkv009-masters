@@ -23,7 +23,9 @@ class KnowledgeGraphCreator:
 
         # add locations to graph
         for location in self.locations:
-            self.kg.add(LOC[location], rdflib.RDF.type, LOC.location)
+            # Check if the location already exists in the graph
+            if (LOC[location], rdflib.RDF.type, LOC.location) not in self.kg.rdf_graph():
+                self.kg.add(LOC[location], rdflib.RDF.type, LOC.location)
 
         # Add relationships to graph:
         for relationship in self.relationships:
