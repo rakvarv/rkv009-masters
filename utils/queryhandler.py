@@ -25,7 +25,7 @@ class ChatCompletionJSON(Query):
     # Implement the send_query method for this subclass
     def send_query(self, prompt: str):
         openai.api_key = self.api_key
-        full_prompt = Config.JSON_PROMPT
+        full_prompt = str(Config.JSON_PROMPT).format(newsContent=prompt)
         response = openai.Completion.create(
             engine = self.model,
             prompt = full_prompt,
@@ -39,7 +39,6 @@ class ChatCompletionJSON(Query):
             try:
                 # Try to parse the string as JSON
                 api_response = json.loads(api_response)
-                print(api_response)
 
                 # Extract the locations and relationships from the API response
                 locations = [loc['name'] for loc in api_response['locations']]
