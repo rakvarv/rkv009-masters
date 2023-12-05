@@ -1,13 +1,14 @@
-import os 
+import os
 import rdflib
 import kglab
 from config import Config
+from urllib.parse import quote
 
 # Define a class for creating a knowledge graph
 class KnowledgeGraphCreator:
     # Initialize the class with locations and relationships
     def __init__(self, locations, relationships):
-        self.locations = locations 
+        self.locations = locations
         self.relationships = relationships
         self.kg = kglab.KnowledgeGraph()  # Create an instance of a knowledge graph
 
@@ -28,23 +29,31 @@ class KnowledgeGraphCreator:
 
         # Add locations to the graph
         for location in self.locations:
-            # Check if the location already exists in the graph
-            if (LOC[location], rdflib.RDF.type, LOC.location) not in self.kg.rdf_graph():
-                self.kg.add(LOC[location], rdflib.RDF.type, LOC.location)  # Add the location if it doesn't exist
+            if isinstance(location, dict) and 'name' in location:
+                encoded_location_name = quote(location['name'])  # Encode location name
+                location_uri = LOC[encoded_location_name]
+                print("RDF: ", (location_uri, rdflib.RDF.type, LOC.Location))
+
+                # Check if the location already exists in the graph
+                if (location_uri, rdflib.RDF.type, LOC.location) not in self.kg.rdf_graph():
+                    self.kg.add(location_uri, rdflib.RDF.type, LOC.location)  # Add the location if it doesn't exist
 
         # Add relationships to the graph
         for relationship in self.relationships:
-            source = LOC[relationship['source']]
-            target = LOC[relationship['target']]
+            source = LOC[quote(relationship['source'])]  # Encode source location name
+            target = LOC[quote(relationship['target'])]  # Encode target location name
             relation = REL[relationship['relation']]
-            self.kg.add(source, relation, target)  # Add the relationship
+
+            # Checks if the relationship already exists in the graph
+            if (source, relation, target) not in self.kg.rdf_graph():
+                self.kg.add(source, relation, target)  # Add the relationship if it doesn't exist
 
         # Try to save the graph
         try:
             self.kg.save_rdf("master_thesis.ttl")
         except Exception as e:
             print("RDF Failed To Save...")
-        
+
         # Create a subgraph tensor
         subgraph = kglab.SubgraphTensor(self.kg)
         graph_style = Config.GRAPH_STYLE
