@@ -9,41 +9,44 @@ class Config(object):
     OPENAI_MODEL = 'text-davinci-003'
     JSON_PROMPT = """
 
-    I am an AI model and I have been trained to extract and structure information about locations and their relationships from text and all locations bordering the mentioned locations, including the geospatial relation. The output will be in a valid JSON format using double quotes, not single. Do not specify you are writing the output, only write the JSON.  Here are a few examples:
+    I am an AI model and I have been trained to extract and structure information about locations and their geo spatial relationships in Vestland, Norway from text and all locations bordering the mentioned locations. The output will be in a valid JSON format using double quotes, not single. Do not specify you are writing the output, only write the JSON.  Here are a few examples:
+
+    The allowed relationships are: Equal, Within, Contain, Touch, Disjoin, Intersect, Union, Exclusive, Difference.
 
     Text: "Paris is in France. It is next to Versailles."
 
-    {
+    {{
       "locations": [
-        {"name": "Paris", "type": "Location"},
-        {"name": "France", "type": "Location"},
-        {"name": "Versailles", "type": "Location"}
+        {{"name": "Paris", "type": "Location"}},
+        {{"name": "France", "type": "Location"}},
+        {{"name": "Versailles", "type": "Location"}}
       ],
       "relationships": [
-        {"source": "Paris", "relation": "isIn", "target": "France"},
-        {"source": "Paris", "relation": "isNextTo", "target": "Versailles"}
+        {{"source": "Paris", "relation": "isIn", "target": "France"}},
+        {{"source": "Paris", "relation": "isNextTo", "target": "Versailles"}}
       ]
-    }
+    }}
 
     Text: "New York is in the United States. It is next to New Jersey."
 
-    {
+    {{
       "locations": [
-        {"name": "New York", "type": "Location"},
-        {"name": "United States", "type": "Location"},
-        {"name": "New Jersey", "type": "Location"}
+        {{"name": "New York", "type": "Location"}},
+        {{"name": "United States", "type": "Location"}},
+        {{"name": "New Jersey", "type": "Location"}}
       ],
       "relationships": [
-        {"source": "New York", "relation": "isIn", "target": "United States"},
-        {"source": "New York", "relation": "isNextTo", "target": "New Jersey"}
+        {{"source": "New York", "relation": "isIn", "target": "United States"}},
+        {{"source": "New York", "relation": "isNextTo", "target": "New Jersey"}}
       ]
-    }
+    }}
 
     Now, given the following text, please extract the locations and their geographical relationships and return the output in a valid JSON format:
 
-    Text: \"Stavanger er Vestland, Norge. Mens Bodø er i Nordland.\"
+    Text: "{newsContent}"
 
     """
+
     OTHER_PROMPT = "What is the capital of norway?"
     MAX_TOKENS = 200
     GRAPH_STYLE = {
