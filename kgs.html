@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": 0, "label": "loc:Fv%2049%20Tokagjeltunnelen", "shape": "dot", "title": "loc:Fv%2049%20Tokagjeltunnelen"}, {"color": "#97c2fc", "id": 1, "label": "loc:Vestland", "shape": "dot", "title": "loc:Vestland"}, {"color": "#97c2fc", "id": 2, "label": "loc:Fylkesvei%2079", "shape": "dot", "title": "loc:Fylkesvei%2079"}, {"color": "#97c2fc", "id": 3, "label": "loc:E16", "shape": "dot", "title": "loc:E16"}, {"color": "#97c2fc", "id": 4, "label": "loc:Rv%2013%20Byrkjenes", "shape": "dot", "title": "loc:Rv%2013%20Byrkjenes"}, {"color": "#97c2fc", "id": 5, "label": "loc:Stalheimtunnelen", "shape": "dot", "title": "loc:Stalheimtunnelen"}, {"color": "#97c2fc", "id": 6, "label": "loc:Voss", "shape": "dot", "title": "loc:Voss"}, {"color": "#97c2fc", "id": 7, "label": "loc:Stavenestunnelen", "shape": "dot", "title": "loc:Stavenestunnelen"}, {"color": "#97c2fc", "id": 8, "label": "loc:Voss%20Resort", "shape": "dot", "title": "loc:Voss%20Resort"}, {"color": "#97c2fc", "id": 9, "label": "loc:Tr%C3%A5st%C3%B8len", "shape": "dot", "title": "loc:Tr%C3%A5st%C3%B8len"}, {"color": "#97c2fc", "id": 10, "label": "loc:Rv%2013%20Osgjelet", "shape": "dot", "title": "loc:Rv%2013%20Osgjelet"}, {"color": "#97c2fc", "id": 11, "label": "loc:Fv%20613%20Gaularfjellet", "shape": "dot", "title": "loc:Fv%20613%20Gaularfjellet"}, {"color": "#97c2fc", "id": 12, "label": "loc:Fv%207594%20Myrlandsfjellet", "shape": "dot", "title": "loc:Fv%207594%20Myrlandsfjellet"}, {"color": "#97c2fc", "id": 13, "label": "loc:Nordland", "shape": "dot", "title": "loc:Nordland"}, {"color": "#97c2fc", "id": 14, "label": "loc:Fv%205744%20Navelsakerstranda", "shape": "dot", "title": "loc:Fv%205744%20Navelsakerstranda"}, {"color": "#97c2fc", "id": 15, "label": "loc:Fv%205625%20Skjerdalsberget", "shape": "dot", "title": "loc:Fv%205625%20Skjerdalsberget"}, {"color": "#97c2fc", "id": 16, "label": "loc:Rv%2015%20Grasdalen", "shape": "dot", "title": "loc:Rv%2015%20Grasdalen"}, {"color": "#97c2fc", "id": 17, "label": "loc:Bergen", "shape": "dot", "title": "loc:Bergen"}, {"color": "#97c2fc", "id": 18, "label": "loc:E10%20Kvanndalen", "shape": "dot", "title": "loc:E10%20Kvanndalen"}, {"color": "#97c2fc", "id": 19, "label": "loc:N%C3%A6r%C3%B8ydalen", "shape": "dot", "title": "loc:N%C3%A6r%C3%B8ydalen"}, {"color": "#97c2fc", "id": 20, "label": "loc:Vaksdal", "shape": "dot", "title": "loc:Vaksdal"}, {"color": "#97c2fc", "id": 21, "label": "loc:Rv%205%20Skredvikja", "shape": "dot", "title": "loc:Rv%205%20Skredvikja"}, {"color": "#97c2fc", "id": 22, "label": "loc:Hardanger", "shape": "dot", "title": "loc:Hardanger"}, {"color": "#97c2fc", "id": 23, "label": "loc:Fylkesvei%2049", "shape": "dot", "title": "loc:Fylkesvei%2049"}, {"color": "#97c2fc", "id": 24, "label": "loc:L%C3%A6rdal", "shape": "dot", "title": "loc:L%C3%A6rdal"}, {"color": "#97c2fc", "id": 25, "label": "loc:Fv%205723%20Merkingsgj%C3%B8let", "shape": "dot", "title": "loc:Fv%205723%20Merkingsgj%C3%B8let"}, {"color": "#97c2fc", "id": 26, "label": "loc:Fv%208830%20Store%20Lerresfjord", "shape": "dot", "title": "loc:Fv%208830%20Store%20Lerresfjord"}, {"color": "#97c2fc", "id": 27, "label": "loc:Finnmark", "shape": "dot", "title": "loc:Finnmark"}, {"color": "#97c2fc", "id": 28, "label": "loc:Nordfjord", "shape": "dot", "title": "loc:Nordfjord"}, {"color": "#97c2fc", "id": 29, "label": "loc:Stad", "shape": "dot", "title": "loc:Stad"}, {"color": "#97c2fc", "id": 30, "label": "loc:Gudvangen", "shape": "dot", "title": "loc:Gudvangen"}, {"color": "#97c2fc", "id": 31, "label": "loc:Sivletunnelen", "shape": "dot", "title": "loc:Sivletunnelen"}, {"color": "#97c2fc", "id": 32, "label": "loc:Rv%2013%20%C3%98vre%20Lonevatn", "shape": "dot", "title": "loc:Rv%2013%20%C3%98vre%20Lonevatn"}, {"color": "#97c2fc", "id": 33, "label": "loc:Tokyo", "shape": "dot", "title": "loc:Tokyo"}, {"color": "#97c2fc", "id": 34, "label": "loc:Asia", "shape": "dot", "title": "loc:Asia"}, {"color": "#97c2fc", "id": 35, "label": "loc:Japan", "shape": "dot", "title": "loc:Japan"}, {"color": "#97c2fc", "id": 36, "label": "loc:Europa", "shape": "dot", "title": "loc:Europa"}, {"color": "#97c2fc", "id": 37, "label": "loc:Fv%2049%20Snauhaugtunnelen", "shape": "dot", "title": "loc:Fv%2049%20Snauhaugtunnelen"}, {"color": "#97c2fc", "id": 38, "label": "loc:Os%20sentrum", "shape": "dot", "title": "loc:Os%20sentrum"}, {"color": "#97c2fc", "id": 39, "label": "loc:Bjornafjorden", "shape": "dot", "title": "loc:Bjornafjorden"}, {"color": "#97c2fc", "id": 40, "label": "loc:Gudvangatunnelen", "shape": "dot", "title": "loc:Gudvangatunnelen"}, {"color": "#97c2fc", "id": 41, "label": "loc:Aurland", "shape": "dot", "title": "loc:Aurland"}, {"color": "#97c2fc", "id": 42, "label": "loc:Oslo", "shape": "dot", "title": "loc:Oslo"}, {"color": "#97c2fc", "id": 43, "label": "loc:Kristiansand", "shape": "dot", "title": "loc:Kristiansand"}, {"color": "#97c2fc", "id": 44, "label": "loc:Rv13%20Osgjelet", "shape": "dot", "title": "loc:Rv13%20Osgjelet"}, {"color": "#97c2fc", "id": 45, "label": "loc:Rv%2013%20Kvassdalen", "shape": "dot", "title": "loc:Rv%2013%20Kvassdalen"}, {"color": "#97c2fc", "id": 46, "label": "loc:Norge", "shape": "dot", "title": "loc:Norge"}, {"color": "#97c2fc", "id": 47, "label": "loc:E%2010%20Presteneset", "shape": "dot", "title": "loc:E%2010%20Presteneset"}, {"color": "#97c2fc", "id": 48, "label": "loc:Granvin", "shape": "dot", "title": "loc:Granvin"}, {"color": "#97c2fc", "id": 49, "label": "loc:E16%20Vaksdal", "shape": "dot", "title": "loc:E16%20Vaksdal"}, {"color": "#97c2fc", "id": 50, "label": "loc:Fv%205724%20Heimefonna", "shape": "dot", "title": "loc:Fv%205724%20Heimefonna"}, {"color": "#97c2fc", "id": 51, "label": "loc:Fv%205829%20Otterdalsstranda", "shape": "dot", "title": "loc:Fv%205829%20Otterdalsstranda"}, {"color": "#97c2fc", "id": 52, "label": "loc:M%C3%B8re%20og%20Romsdal", "shape": "dot", "title": "loc:M%C3%B8re%20og%20Romsdal"}, {"color": "#97c2fc", "id": 53, "label": "loc:Rv%2013%20Ygningsdalshamrane", "shape": "dot", "title": "loc:Rv%2013%20Ygningsdalshamrane"}]);
+                  edges = new vis.DataSet([{"from": 0, "label": "rel:isIn", "to": 1}, {"from": 2, "label": "rel:isAlternativeTo", "to": 3}, {"from": 4, "label": "rel:isIn", "to": 1}, {"from": 5, "label": "rel:isIn", "to": 6}, {"from": 7, "label": "rel:isOn", "to": 3}, {"from": 8, "label": "rel:isIn", "to": 9}, {"from": 10, "label": "rel:isIn", "to": 1}, {"from": 11, "label": "rel:isIn", "to": 1}, {"from": 7, "label": "rel:isBetween", "to": 6}, {"from": 12, "label": "rel:isIn", "to": 13}, {"from": 14, "label": "rel:isIn", "to": 1}, {"from": 15, "label": "rel:isIn", "to": 1}, {"from": 3, "label": "rel:isIn", "to": 6}, {"from": 16, "label": "rel:isIn", "to": 1}, {"from": 7, "label": "rel:isBetween", "to": 17}, {"from": 18, "label": "rel:isIn", "to": 13}, {"from": 3, "label": "rel:isIn", "to": 19}, {"from": 3, "label": "rel:isIn", "to": 20}, {"from": 21, "label": "rel:isIn", "to": 1}, {"from": 22, "label": "rel:isConnectedBy", "to": 23}, {"from": 3, "label": "rel:isIn", "to": 24}, {"from": 25, "label": "rel:isIn", "to": 1}, {"from": 26, "label": "rel:isIn", "to": 27}, {"from": 28, "label": "rel:isIn", "to": 29}, {"from": 30, "label": "rel:isNextTo", "to": 19}, {"from": 31, "label": "rel:isIn", "to": 6}, {"from": 32, "label": "rel:isIn", "to": 1}, {"from": 33, "label": "rel:isIn", "to": 34}, {"from": 33, "label": "rel:isIn", "to": 35}, {"from": 34, "label": "rel:isNextTo", "to": 36}, {"from": 37, "label": "rel:isIn", "to": 1}, {"from": 38, "label": "rel:isIn", "to": 39}, {"from": 40, "label": "rel:isIn", "to": 41}, {"from": 42, "label": "rel:isNextTo", "to": 43}, {"from": 23, "label": "rel:isDetourFor", "to": 3}, {"from": 44, "label": "rel:isIn", "to": 1}, {"from": 20, "label": "rel:isIn", "to": 1}, {"from": 45, "label": "rel:isIn", "to": 1}, {"from": 42, "label": "rel:isIn", "to": 46}, {"from": 47, "label": "rel:isIn", "to": 13}, {"from": 48, "label": "rel:isIn", "to": 6}, {"from": 49, "label": "rel:isIn", "to": 1}, {"from": 50, "label": "rel:isIn", "to": 1}, {"from": 51, "label": "rel:isIn", "to": 52}, {"from": 53, "label": "rel:isIn", "to": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

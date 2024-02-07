@@ -1,0 +1,26 @@
+@prefix loc: <http://example.org/locations/> .
+@prefix rel: <http://example.org/relationships/> .
+
+loc:Bodø a loc:location ;
+    rel:isIn loc:Nordland .
+
+loc:Os%20sentrum rel:isIn loc:Bjornafjorden .
+
+loc:Oslo rel:isIn loc:Norge ;
+    rel:isNextTo loc:Kristiansand .
+
+loc:Stavanger a loc:location ;
+    rel:isIn loc:Norge,
+        loc:Vestland .
+
+loc:Tokyo rel:isIn loc:Asia,
+        loc:Japan .
+
+loc:Asia rel:isNextTo loc:Europa .
+
+loc:Nordland a loc:location .
+
+loc:Vestland a loc:location .
+
+loc:Norge a loc:location .
+
