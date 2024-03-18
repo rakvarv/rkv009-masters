@@ -26,10 +26,11 @@ class ChatCompletionJSON(Query):
     # Implement the send_query method for this subclass
     def send_query(self, prompt: str):
 
-        openai.api_key = self.api_key
-        client = OpenAI()
+        #openai.api_key = self.api_key
+        openai.api_key = "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"
+        client = OpenAI(api_key="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")
         response = client.chat.completions.create(
-            model = "gpt-4-1106-preview",
+            model = "gpt-4-turbo-preview",
             messages=[
                 {"role": "system", "content": "I am an AI model and I have been trained to extract and structure information about locations and their geo spatial relationships from texts and all locations bordering the mentioned locations. The output will be in a valid JSON format using double quotes, not single. Do not specify you are writing the output, only write the JSON. If the locations include whitespaces, make the location in camel case writing. Here are a few examples:"},
                 {"role": "user", "content": "Text: Paris is in France. It is next to Versailles."},
