@@ -1,0 +1,936 @@
+@prefix loc: <http://example.org/locations/> .
+@prefix rel: <http://example.org/relationships/> .
+
+<http://example.org/locations/%C3%85lkrysset> rel:isIn loc:Sogndal .
+
+<http://example.org/locations/%C3%85rd%C3%B8la> rel:flowsInto loc:Osen ;
+    rel:isIn <http://example.org/locations/%C3%98vre%C3%85rdal> .
+
+<http://example.org/locations/%C3%85rdalTyin> rel:hasReducedVisibility loc:VegtrafikksentralenVest .
+
+<http://example.org/locations/%C3%85rdalstangen> rel:hasFacility loc:torget .
+
+loc:110sentralenVest rel:isLocatedIn loc:Vestlandet .
+
+loc:Abdulmajid%20Omar%20Yousef%20Ahmed rel:cameTo loc:Norge ;
+    rel:grewUpIn loc:Sudan .
+
+loc:AdolphBergsVei rel:isIn loc:Land%C3%A5s .
+
+loc:AleksByrd rel:isFrom loc:Estland .
+
+loc:Alvermarka rel:isIn loc:AlverKommune .
+
+loc:Ambulanseb%C3%A5t rel:to loc:Flor%C3%B8 ;
+    rel:travelsOver loc:Fr%C3%B8ysj%C3%B8en .
+
+loc:Ambulansebil rel:isOn loc:Bremangerlandet ;
+    rel:to loc:F%C3%B8rde .
+
+loc:Amfi rel:isIn loc:Sogndal .
+
+loc:Arbeidstilsynet rel:inspects loc:BolidenOdda .
+
+loc:ArnaStasjon rel:isClosedDueTo loc:Arna .
+
+loc:Asbj%C3%B8rn%C3%98ystese rel:worksFor loc:Multiconsult .
+
+loc:Askvoll rel:nextVisit loc:passbussen .
+
+loc:AtlanticSmartPortsBlueAccelerationNetwork rel:isRelatedTo loc:Atlanterhavet .
+
+loc:AurlandHol rel:considersConvoy loc:VegtrafikksentralenVest .
+
+loc:BMW rel:stolenFrom loc:Lofthus .
+
+loc:BergenKristneGrunnskole rel:isIn loc:B%C3%B8nes .
+
+loc:BergenNordPolitistasjon rel:isLocatedIn loc:Bergen .
+
+loc:BergenSentrum rel:isIn loc:Bergen .
+
+loc:BergenVestPolitistasjon rel:isLocatedIn loc:BergenVest .
+
+loc:Bergensbanen rel:connects loc:Dale,
+        loc:Voss .
+
+loc:Bil rel:foundAfterChaseFrom loc:Bergen ;
+    rel:foundAt loc:Flesland ;
+    rel:stolenFrom loc:Lofthus .
+
+loc:Bj%C3%B8rkhaugtunnelen rel:isIn loc:Arna .
+
+loc:BjarneInstanes rel:isIn loc:Bergen .
+
+loc:Bjerk rel:isIn loc:Bergen .
+
+loc:Bjor%C3%B8y rel:isIn <http://example.org/locations/%C3%98ygarden> .
+
+loc:Bjor%C3%B8ytunnelen rel:crosses loc:Vatlestraumen ;
+    rel:isIn <http://example.org/locations/%C3%98ygarden>,
+        loc:Bergen .
+
+loc:Blomsterbedet rel:isLocatedIn loc:G%C3%A5gata .
+
+loc:Bontelabo rel:isNear loc:Kalv%C3%A5g .
+
+loc:Br%C3%A5tet rel:isIn loc:Fyllingsdalen .
+
+loc:Brands%C3%B8y%C3%A5sen rel:hasTechnicalError loc:NorskTelevisjon .
+
+loc:Brannmannskap rel:onTheWayFrom loc:Gaupne .
+
+loc:Brannvesenet rel:respondsTo loc:Jostedalen ;
+    rel:wasOnPlace loc:Loddefjord .
+
+loc:Calandkanalen rel:near loc:Rotterdam .
+
+loc:Credokirken rel:isAlsoKnownAs loc:LevendeOrd ;
+    rel:isIn <http://example.org/locations/%C3%98vreKr%C3%A5kenes> .
+
+loc:Dyrkolbotn rel:connectsTo loc:E39 .
+
+loc:E10Kvanndalen rel:isIn loc:Nordland .
+
+loc:E10Presteneset rel:isIn loc:Nordland .
+
+loc:E134Haukelifjell rel:isAffectedBy loc:kolonnekj%C3%B8ring .
+
+loc:E16Filefjell rel:status loc:Open ;
+    rel:temperatureAt loc:Smedalen .
+
+loc:E16Seltatunnelen rel:connectedTo loc:Borgundstunnelen .
+
+loc:E16Vaksdal rel:isIn loc:Vestland .
+
+loc:Egon rel:isOn loc:Torgallmenningen .
+
+loc:Eidsv%C3%A5gneset rel:isIn loc:Bergen .
+
+loc:Engeb%C3%B8fjellet rel:isAssociatedWith loc:Nordic%20Mining .
+
+loc:Eramet rel:isLocatedIn loc:Tyssedal .
+
+loc:Etne rel:isLocatedIn loc:Norway .
+
+loc:Evangerbroen rel:isIn loc:E16 .
+
+loc:F%C3%B8rdeSentralsjukehus rel:isIn loc:F%C3%B8rde .
+
+loc:F%C3%B8reren rel:flownTo loc:F%C3%B8rde .
+
+loc:FanaGolfklubb rel:isIn loc:Norge .
+
+loc:FireDepartment rel:dispatchesFrom loc:Sogndal ;
+    rel:hasControlAt loc:Kaupanger .
+
+loc:Fj%C3%B8ra rel:isIn loc:Sogndal .
+
+loc:Flatbygdi rel:isLocatedIn loc:Vik .
+
+loc:FleslandKai rel:isIn loc:VestPolitidistrikt .
+
+loc:Folgefonntunnelen rel:isIn loc:Hardanger .
+
+loc:Fr%C3%B8y rel:isAssociatedWith loc:Kalv%C3%A5g .
+
+loc:FrodeKolltveit rel:isOperationLeaderAt loc:VestPolitidistrikt .
+
+loc:Fureli rel:droveFrom loc:Holme ;
+    rel:towards loc:Frekhaug .
+
+loc:Fv27Venabygdsfjellet rel:isClosedDueTo loc:uv%C3%A6r .
+
+loc:Fv49Snauhaugtunnelen rel:isIn loc:Vestland .
+
+loc:Fv49Tokagjeltunnelen rel:isIn loc:Vestland .
+
+loc:Fv50Hol rel:isNextTo loc:Aurland ;
+    rel:temperatureAt loc:Vestredalen .
+
+loc:Fv50Hol-Aurland rel:status loc:OpenWithReducedVisibility .
+
+loc:Fv50HolAurland rel:isClosedDueTo loc:uv%C3%A6r .
+
+loc:Fv53%C3%85rdal rel:isNextTo loc:Tyin ;
+    rel:temperatureAt loc:Tyinosen .
+
+loc:Fv53Tyin-%C3%85rdal rel:status loc:Open .
+
+loc:Fv5625Skjerdalsberget rel:isIn loc:Vestland .
+
+loc:Fv5723Merkingsgj%C3%B8let rel:isIn loc:Vestland .
+
+loc:Fv5724Heimefonna rel:isIn loc:Vestland .
+
+loc:Fv5744Navelsakerstranda rel:isIn loc:Vestland .
+
+loc:Fv5829Otterdalsstranda rel:isIn loc:M%C3%B8reOgRomsdal .
+
+loc:Fv613Gaularfjellet rel:isIn loc:Vestland .
+
+loc:Fv7594Myrlandsfjellet rel:isIn loc:Nordland .
+
+loc:Fv8830StoreLerresfjord rel:isIn loc:Finnmark .
+
+loc:Fylkesveg500 rel:goesThrough loc:Sundal .
+
+loc:Fylkesveg53 rel:isBetween loc:Finns%C3%A5s,
+        loc:Kolnostunnelen ;
+    rel:near loc:Strendene .
+
+loc:Fylkesveg5454 rel:leadsTo loc:KnarvikKai .
+
+loc:Fylkesveg55 rel:includes loc:R%C3%A5umtunnelen ;
+    rel:isBetween loc:Gaupne,
+        loc:Nes .
+
+loc:Fylkesvei49 rel:isIn loc:Hardanger .
+
+loc:Fylkesvei79 rel:isDetourFor loc:E16 .
+
+loc:Gravdal rel:isIn loc:Bergensomr%C3%A5det .
+
+loc:Gravensteinsgata rel:isIn loc:Sogndal .
+
+loc:H%C3%A5kon%20Myrvang rel:isLocatedIn loc:Naustdal .
+
+loc:H%C3%A5konshella rel:isIn loc:Bergen .
+
+loc:H%C3%B8gehammaren rel:isAbove loc:Nessane .
+
+loc:HardangerFolkeblad rel:reportsOn loc:Hardanger .
+
+loc:HardangerFolkemuseum rel:isPartOf loc:HardangerOgVossMuseum ;
+    rel:operates loc:Agatunet .
+
+loc:HardangerPolitistasjon rel:conductsInvestigationIn loc:Hardanger ;
+    rel:isIn loc:Hardanger .
+
+loc:Haugalandet rel:isLocatedIn loc:Norway .
+
+loc:Haugbakken15 rel:includes loc:Gnr1Bnr116 .
+
+loc:Haugesund rel:isLocatedIn loc:Norway .
+
+loc:Haukeland rel:isIn loc:Haukeland%20universitetssjukehus .
+
+loc:Haukeland%20sykehus rel:isIn loc:Norge .
+
+loc:HaukelandSykehus rel:isIn loc:Bergen,
+        loc:Fantoft .
+
+loc:HaukelandUniversitetssjukehus rel:isLocatedIn loc:Hardanger .
+
+loc:HausOfFriele rel:performsIn loc:Bergen .
+
+loc:Helleb%C3%B8stranda rel:isNear loc:Lavik .
+
+loc:Herand rel:isLocatedIn loc:Hardanger .
+
+loc:Holten rel:isNear loc:Fj%C3%A6rlandstunnelen .
+
+loc:Hovland rel:isIn loc:Hardanger .
+
+loc:HubForOcean rel:isLocatedIn loc:Portugal .
+
+loc:HusnesUngdomsskule rel:isNear loc:Opsangervegen .
+
+loc:Hydro rel:exploringWindPowerIn loc:H%C3%B8yanger,
+        loc:Sunnfjord ;
+    rel:hasFacilityIn <http://example.org/locations/%C3%85rdal>,
+        loc:Husnes,
+        loc:Karm%C3%B8y ;
+    rel:inDialogueWith <http://example.org/locations/%C3%85rdalKommune> ;
+    rel:investedIn <http://example.org/locations/%C3%85rdal> ;
+    rel:partneringWith loc:Eviny,
+        loc:Zephyr .
+
+loc:IndreSogn rel:isWithin loc:Sogndal .
+
+loc:Indremisjonshjemmet rel:isIn loc:Hollendergaten .
+
+loc:Involverte rel:underInvestigationAt loc:AnotherLocation .
+
+loc:IrisScene rel:isLocatedIn loc:Odda .
+
+loc:Jenny%20F%C3%B8lling rel:isLocatedIn loc:Sunnfjord .
+
+loc:JohanneVikes%C3%A5 rel:worksFor loc:Bymilj%C3%B8etaten .
+
+loc:JohnGrieg rel:residesIn loc:Troldhaugvegen .
+
+loc:JulieDubreaux rel:isFrom loc:Paris .
+
+loc:Kalv%C3%B8ya rel:isNear loc:Kalv%C3%A5g .
+
+loc:KariSlettenSamland rel:worksAt loc:Feios .
+
+loc:Kinsarvik rel:isIn loc:Hardanger ;
+    rel:isLocatedIn loc:Hardanger .
+
+loc:Kn%C3%B8lhval rel:commonlyFound loc:NordNorge ;
+    rel:migratesTo loc:Karibien ;
+    rel:rarelySeenIn loc:Hardangerfjorden .
+
+loc:Knappetunnelen rel:isIn loc:Dolvik .
+
+loc:Knutholmen rel:collaboratesWith loc:KystlagetIKalv%C3%A5g .
+
+loc:KrFsToppkandidat rel:isIn loc:Bergen .
+
+loc:Krimteknisk rel:doInvestigation loc:Loddefjord .
+
+loc:Kristiansand rel:isIn loc:Norge .
+
+loc:Kvernagrovi rel:approximatelyOneKilometerFrom <http://example.org/locations/%C3%98vre%20%C3%85rdal> .
+
+loc:L%C3%A5nefjorden rel:isDestination loc:ambulansehelikopteret .
+
+loc:L%C3%A6rdalSjukehus rel:isIn loc:L%C3%A6rdal .
+
+loc:L%C3%A6rdalselvi rel:isConsidered loc:Noregs ;
+    rel:isIn loc:L%C3%A6rdal .
+
+loc:L%C3%B8nborg rel:isIn loc:YtreSandviken .
+
+loc:L%C3%B8vstakksiden rel:isIn loc:Bergen,
+        loc:Norge .
+
+loc:L%C3%B8vstakkveien rel:isIn loc:Norge .
+
+loc:Langebrua rel:isIn loc:riksvei13 .
+
+loc:LarsMortenLothe rel:worksAt loc:BergenSentrumPolitistasjon .
+
+loc:Leighgotakrysset rel:isIn loc:Sogndal .
+
+loc:Leitevegen rel:isIn loc:SogndalKommune .
+
+loc:Liavannet rel:isIn loc:Bergensomr%C3%A5det .
+
+loc:Lind%C3%A5svegen rel:hasExitTo <http://example.org/locations/%C3%85se> ;
+    rel:incorrectlyReportedAs loc:Isdalst%C3%B8 .
+
+loc:Lingesetfjellet rel:divides loc:Aurland,
+        loc:Sogndal ;
+    rel:isOn loc:Kaupangerhalv%C3%B8ya .
+
+loc:Loen rel:isIn loc:Stryn .
+
+loc:London rel:isIn loc:Europa .
+
+loc:Lothepus rel:hasPlansIn loc:Hj%C3%B8llo .
+
+loc:Lysekloster rel:isIn loc:Os .
+
+loc:Magne%20Straumstein rel:isLocatedIn loc:Sogndal .
+
+loc:Mannen rel:takenTo loc:Arresten .
+
+loc:Mannskap rel:sentFrom <http://example.org/locations/%C3%85sane>,
+        loc:Laksev%C3%A5g .
+
+loc:MartheEngs%C3%A6th rel:isFrom loc:Feios .
+
+loc:MichaelKrohnGate rel:isIn loc:Bergen .
+
+loc:MichaelKrohnsGate rel:isIn loc:Bergen ;
+    rel:isNearTo loc:BergenLegevakt .
+
+loc:MidtNorge rel:isLocatedIn loc:Norway .
+
+loc:Midtun rel:isIn loc:Bergen .
+
+loc:MindeAll%C3%A9 rel:isIn loc:Bergen .
+
+loc:Mj%C3%B8sv%C3%A5gen rel:isLocatedIn loc:Oster%C3%B8y .
+
+loc:Motorsykkel rel:offRoadAt loc:Stemmedalen .
+
+loc:Mulebanen rel:isIn loc:H%C3%B8dden .
+
+loc:Mulesvingen%20barnehage rel:isNear loc:Varegghallen .
+
+loc:Myking rel:from loc:110Vest .
+
+loc:NTP rel:sameAs loc:NasjonalTransportplan .
+
+loc:NaturvernforbundetISognOgFjordane rel:isLocatedIn loc:Sogn%20og%20Fjordane .
+
+loc:Nesflaten rel:connectedTo loc:R%C3%B8ldal .
+
+loc:NewHotelPlans rel:areIn loc:Almerket .
+
+loc:Norafjorden rel:isCrossedBy <http://example.org/locations/%C3%98yrefjellet>,
+        loc:Fardal,
+        loc:Vinesst%C3%B8len .
+
+loc:Nord%C3%A5svannet rel:isIn loc:Bergen .
+
+loc:NordRogaland rel:isLocatedIn loc:Norway .
+
+loc:Nordfjord rel:isIn loc:Stad .
+
+loc:Nordfjordeid rel:isLocationOf loc:hjarterehabiliteringa%20ved%20Nordfjord%20sjukehus .
+
+loc:Nordhordlandbroen rel:isIn loc:Bergensomr%C3%A5det .
+
+loc:Nordhordlandsbrua rel:isSouthOf loc:sidevegane .
+
+loc:Norheimsund rel:isLocatedIn loc:Hardanger .
+
+loc:Norsun rel:interestedIn <http://example.org/locations/%C3%85rdal> .
+
+loc:Nyg%C3%A5rdsbroen rel:isIn loc:Bergen .
+
+loc:Nyg%C3%A5rdsparken rel:isIn loc:Bergen .
+
+loc:OddaKino rel:isLocatedIn loc:Odda .
+
+loc:OddaPostkontor rel:isIn loc:Odda .
+
+loc:OddaReisebyr%C3%A5 rel:isIn loc:Odda .
+
+loc:OddaSentrum rel:isIn loc:UllensvangKommune .
+
+loc:OddaVideosenter rel:isIn loc:Odda .
+
+loc:Okslatunnelen rel:isIn loc:Hardanger .
+
+loc:Operasjonsleder rel:in loc:VestPolitidistrikt .
+
+loc:Operasjonssentralen rel:in loc:Bergen .
+
+loc:Overvannsledning rel:endsAt loc:Utl%C3%B8pSj%C3%B8 ;
+    rel:extendsFrom loc:G%C3%A5gata .
+
+loc:Peterhead rel:isIn loc:Skottland .
+
+loc:PetterJonsbr%C3%A5tanZachariassen rel:wasOn loc:bus .
+
+loc:PinsekirkenTabernaklet rel:isIn loc:Bergen .
+
+loc:Plommevika rel:isIn loc:Torsnes .
+
+loc:Politi rel:investigates loc:Arbeidsulykka ;
+    rel:isLocatedIn loc:Hardanger .
+
+loc:Puddefjordsbroen rel:isIn loc:Bergensomr%C3%A5det .
+
+loc:Redalsvika rel:isLocatedIn loc:Vestland .
+
+loc:Regnbuedagene rel:occursIn loc:Bergen .
+
+loc:Rekstad rel:isConnectedTo loc:Nekk%C3%B8y .
+
+loc:ReneePang rel:wasAlsoOn loc:bus .
+
+loc:Riksantikvaren rel:involvedWith loc:Hardingen .
+
+loc:Riksvegen rel:isIn loc:Sogndal .
+
+loc:Riksvei555 rel:isIn loc:Bergensomr%C3%A5det .
+
+loc:Rognaldsv%C3%A5g rel:potentiallyAffectedBy loc:MobileStationOutage .
+
+loc:Romarheimsdalen rel:contains loc:E39,
+        loc:Nipetunnelen .
+
+loc:RonnyAndr%C3%A9%C3%98vrebotten rel:worksAt loc:BergenS%C3%B8r .
+
+loc:Rossnos rel:overlooks loc:Ullensvang .
+
+loc:Rv.%205 rel:includes loc:Fodnestunnelen,
+        loc:Naustdaltunnelen .
+
+loc:Rv.13Vikafjellet rel:isIn loc:Fjellet .
+
+loc:Rv13%C3%98vreLonevatn rel:isIn loc:Vestland .
+
+loc:Rv13Bondeviki rel:isNextTo loc:Fardal .
+
+loc:Rv13Byrkjenes rel:isIn loc:Vestland .
+
+loc:Rv13Kvassdalen rel:isIn loc:Vestland .
+
+loc:Rv13Osgjelet rel:isIn loc:Vestland .
+
+loc:Rv13Vikafjellet rel:isOpen loc:Rv52Hemsedalsfjellet ;
+    rel:status loc:kolonnek%C3%B8yringInnf%C3%B8rtDueToUv%C3%AAr .
+
+loc:Rv13Ygningsdalshamrane rel:isIn loc:Vestland .
+
+loc:Rv15Grasdalen rel:isIn loc:Vestland .
+
+loc:Rv5Hatlebakken rel:isNextTo loc:Kaupanger .
+
+loc:Rv5Kj%C3%B8snestunnelen rel:isIn loc:Sunnfjord ;
+    rel:reportedBy loc:Vegtrafikksentralen .
+
+loc:Rv5Skredvikja rel:isIn loc:Vestland .
+
+loc:Rv7Hardangervidda rel:status loc:Stengd .
+
+loc:S%C3%A6tretunnelen rel:isIn loc:Arna .
+
+loc:S%C3%B8rNorge rel:isLocatedIn loc:Norway .
+
+loc:S%C3%B8rfjorden rel:isIn loc:Hardanger .
+
+loc:Samnangervegen rel:isIn loc:Samnanger .
+
+loc:Sandkvia rel:isLocatedOn loc:Svan%C3%B8y .
+
+loc:Sarajevo rel:isIn loc:Bosnia .
+
+loc:Sauda rel:isLocatedIn loc:Norway .
+
+loc:SchipholsLuftrom rel:partOf loc:AmsterdamflyplassenSchiphol .
+
+loc:Selje rel:isConnectedTo loc:Bergen .
+
+loc:Seljestadtunnelen rel:projectDelayed loc:R%C3%B8ldal,
+        loc:Seljestad .
+
+loc:Setane rel:isIn loc:Nessane .
+
+loc:Sider rel:productOf loc:Hardanger .
+
+loc:Sivletunnelen rel:isIn loc:Voss .
+
+loc:Skagevegen rel:isIn loc:Ytrebygda .
+
+loc:Skinnarnipi rel:isAbove loc:ambulansehelikopteretDestination .
+
+loc:Sogn rel:isIn loc:Noreg .
+
+loc:Sogn%20Avis rel:reportsObservationBy loc:Neighbor .
+
+loc:SognOgFjordaneTingrett rel:isLocatedIn loc:SognOgFjordane .
+
+loc:Solheimsviken rel:isIn loc:Bergen .
+
+loc:SolveigSkarseth rel:worksAt loc:Vik .
+
+loc:Sondre%20Solheim rel:isAt loc:Kvinnherad .
+
+loc:Spondalen rel:isIn <http://example.org/locations/%C3%85sane> .
+
+loc:St1Norge rel:owned loc:Shellstasjonen .
+
+loc:Stalheimtunnelen rel:isIn loc:Voss .
+
+loc:StatsforvaltarenIVestland rel:isLocatedIn loc:Vestland .
+
+loc:Statsforvalteren rel:hasAuthorityOver loc:UllensvangKommune .
+
+loc:Stavanger rel:isIn loc:S%C3%B8rVestPolitidistrikt ;
+    rel:isNextTo loc:Sandnes .
+
+loc:Steinane rel:cameDownIn <http://example.org/locations/%C3%98ksnaviki> .
+
+loc:Stenrusten rel:isOn loc:Ask%C3%B8y .
+
+loc:Stian%20Kvam rel:memberOf loc:110Vest .
+
+loc:Stine%20Mjelde rel:talksTo loc:Nordhordland .
+
+loc:Storeklubben rel:isOn loc:Ask%C3%B8y .
+
+loc:StraffbartForhold rel:investigatedIn loc:LocationOfOccurrence .
+
+loc:Straumen rel:isBetween loc:Nekk%C3%B8y,
+        loc:Reksta .
+
+loc:SunnivaEikenAndClaraM%C3%BCller rel:isTravelingTo loc:Voss .
+
+loc:Svan%C3%B8yHavbruk rel:isLocatedOn loc:Svan%C3%B8y ;
+    rel:uses loc:WavePower .
+
+loc:Svanhild rel:setsCourse loc:North .
+
+loc:Teigdalsvegen rel:connects loc:Brekkhus,
+        loc:Evanger ;
+    rel:isIn loc:VossHerad .
+
+loc:Tjemsland rel:residesIn loc:R%C3%B8ldal ;
+    rel:worksAt loc:OddaVidareg%C3%A5andeSkule .
+
+loc:Tog rel:isHeadingTo loc:Oslo ;
+    rel:isStuckIn loc:Arna .
+
+loc:TogetTilMyrdal rel:isDelayedAt loc:JernbanestasjonenIBergen .
+
+loc:Torgeir%20Bang rel:previouslyWorkedAt loc:SogndalTrafikkstasjon,
+        loc:StatensVegvesen ;
+    rel:worksAt loc:SogndalKommune .
+
+loc:Tr%C3%B8ndelag rel:partOf loc:S%C3%B8rNoreg .
+
+loc:Troms%C3%B8 rel:isIn loc:NordNorge .
+
+loc:TureNermansVei rel:isIn loc:Fyllingsdalen .
+
+loc:UP rel:on loc:Riksveg5 .
+
+loc:Ulsm%C3%A5gveien rel:isIn loc:Fana .
+
+loc:Utne rel:isLocatedIn loc:Hardanger .
+
+loc:VannOgAvl%C3%B8psledninger rel:isNear loc:RV13 .
+
+loc:VardenIdrettspark rel:isNear loc:Sandeidbrotet .
+
+loc:VardenKunstgress rel:isIn loc:Bergen .
+
+loc:Vasstun rel:isIn loc:Odda .
+
+loc:Vats rel:isLocatedIn loc:Norway .
+
+loc:Vester%C3%A5len rel:isIn loc:NordNorge .
+
+loc:VestkantenStorsenter rel:isIn loc:Bergen .
+
+loc:Vetlebotnvatnet rel:isOn loc:Fv.50 .
+
+loc:Vikafjellet rel:isClosed loc:VegtrafikksentralenVest .
+
+loc:Villakssenteret rel:isIn loc:L%C3%A6rdal .
+
+loc:VisitBergen rel:isLocatedIn loc:Bergensregionen .
+
+loc:Vogntoget rel:isStuckAt loc:Fylkesveg5582 .
+
+loc:VossResort rel:isIn loc:Tr%C3%A5st%C3%B8len ;
+    rel:isNear loc:Voss .
+
+loc:WoolHeritageRoute rel:isRelatedTo loc:DaleOfNorway,
+        loc:Norlender,
+        loc:Oleana .
+
+loc:YtreBremanger rel:isPartOf loc:Bremanger .
+
+loc:emergencyTeams rel:haveGoodControlDespite loc:difficultWeatherConditions .
+
+loc:mountainPass rel:closedUntil loc:Tuesday07AM .
+
+loc:passengers rel:areSafeDownFrom loc:mountain ;
+    rel:drivenWestTowards loc:Breist%C3%B8l ;
+    rel:evacuatedInGroupsBy loc:emergencyVehicles ;
+    rel:onTheWayTo loc:H%C3%A5bakkenKafe ;
+    rel:thenDrivenTo loc:H%C3%A5bakkenKafe .
+
+loc:rv.13Brattlandsdalen rel:openWhen loc:E134Closed .
+
+loc:samhandlings%C3%B8ving rel:occursIn loc:Husnes .
+
+loc:terrorhandling rel:occurredIn loc:Oslo .
+
+<http://example.org/locations/%C3%85nneland> rel:isLocatedIn loc:Gulen .
+
+<http://example.org/locations/%C3%98vre%C3%85rdal> rel:isIn <http://example.org/locations/%C3%85rdal> .
+
+<http://example.org/locations/%C3%98vreKr%C3%A5kenes> rel:isIn loc:Fyllingsdalen .
+
+loc:Agatunet rel:isOwnedBy loc:StiftelsenAgatunet .
+
+loc:Arbeidsulykka rel:occurredAt loc:BolidenOdda .
+
+loc:BergenLegevakt rel:isIn loc:Bergen .
+
+loc:Borgundstunnelen rel:isConnectedTo loc:Steinklepp .
+
+loc:Brattlandsdalen rel:alternativeRoute loc:E134 .
+
+loc:Bymilj%C3%B8etaten rel:partOf loc:BergenKommune .
+
+loc:Eidfjord rel:isIn loc:Hardanger ;
+    rel:isLocatedIn loc:Hardanger ;
+    rel:isNextTo loc:Sima .
+
+loc:Fj%C3%A6rlandstunnelen rel:reportedBy loc:Vegtrafikksentralen .
+
+loc:Fl%C3%A5m rel:isIn loc:Aurland .
+
+loc:Flenjatunnelen rel:isIn loc:Sogn%20og%20Fjordane .
+
+loc:Fodnestunnelen rel:isIn loc:Sogn%20og%20Fjordane .
+
+loc:Fr%C3%B8nningen rel:isConnectedByFjordSpanTo loc:Kaupangerhalv%C3%B8ya .
+
+loc:Fv.50 rel:isIn loc:Aurland .
+
+loc:Gudvangatunnelen rel:isIn loc:Aurland,
+        loc:Sogn%20og%20Fjordane .
+
+loc:Gudvangen rel:isIn loc:Aurland .
+
+loc:Hardangerfjorden rel:isIn loc:Hardanger ;
+    rel:isRarelySeenIn loc:Hardanger .
+
+loc:Hemsedalsfjellet rel:isClosedDueTo loc:accident .
+
+loc:Hollendergaten rel:isIn loc:Bergen,
+        loc:Hordaland .
+
+loc:Hyllestad rel:nextVisit loc:passbussen .
+
+loc:JernbanestasjonenIBergen rel:isClosedDueTo loc:Arna .
+
+loc:Kaifronten rel:isIn loc:Havnebassenget .
+
+loc:Kinn rel:hasMobileStationOutage loc:Telenor .
+
+loc:Klippfiskmuseet rel:isIn loc:Kristiansund .
+
+loc:KnarvikKai rel:isIn loc:AlverKommune .
+
+loc:KystlagetIKalv%C3%A5g rel:isLocatedIn loc:Kalv%C3%A5g .
+
+loc:L%C3%A6rdalstunnelen rel:isIn loc:Noreg,
+        loc:Sogn%20og%20Fjordane .
+
+loc:Laksev%C3%A5g rel:isIn loc:Bergen .
+
+loc:Lavik rel:isIn loc:H%C3%B8yanger .
+
+loc:N%C3%A6r%C3%B8ydalen rel:isNear loc:Gudvangen .
+
+loc:NasjonalTransportplan rel:excludes loc:Brattlandsdalen .
+
+loc:Naustdaltunnelen rel:isIn loc:Sogn%20og%20Fjordane .
+
+loc:Nes rel:isIn loc:Luster .
+
+loc:Nipetunnelen rel:isOn loc:E39 .
+
+loc:Nordhordland rel:isLocatedIn loc:Norway .
+
+loc:Norlender rel:isLocatedIn loc:Lonev%C3%A5g .
+
+loc:NorskTelevisjon rel:ownedBy loc:NRK,
+        loc:TV2 .
+
+loc:Opsangervegen rel:isIn loc:Kvinnherad .
+
+loc:Osen rel:connectsWith <http://example.org/locations/%C3%85rdalsvatnet> .
+
+loc:Oster%C3%B8y rel:isLocatedIn loc:Bergensregionen .
+
+loc:Paradis rel:isIn loc:Bergen .
+
+loc:R%C3%A5umtunnelen rel:isIn loc:Luster .
+
+loc:RV13 rel:hasDetourAround loc:Almerket .
+
+loc:Ramneberg rel:isConnectedTo loc:Hove ;
+    rel:isNorthOf loc:Fresvik .
+
+loc:Riksveg5 rel:at loc:Evja .
+
+loc:Rotterdam rel:isIn loc:Nederland .
+
+loc:Rv52Hemsedalsfjellet rel:status loc:OpenWithPotentialForClosureOrKolonnek%C3%B8yring .
+
+loc:S%C3%B8rNoreg rel:weatherWarning loc:GultFarevarselForKraftigSn%C3%B8fokk .
+
+loc:Sandeidbrotet rel:isIn loc:Fyllingsdalen .
+
+loc:Sandnes rel:isIn loc:S%C3%B8rVestPolitidistrikt .
+
+loc:Seljestad rel:connectedTo loc:R%C3%B8ldal ;
+    rel:onRoute loc:E134 .
+
+loc:Shellstasjonen rel:isIn loc:Alver,
+        loc:Knarvik .
+
+loc:Sima rel:isIn loc:Eidfjord .
+
+loc:Skottland rel:isLocatedAt loc:northwest .
+
+loc:SognOgFjordane rel:isLocatedIn loc:Norge .
+
+loc:SogndalTrafikkstasjon rel:isIn loc:Sogndal .
+
+loc:StatensVegvesen rel:plannedConstruction loc:Knarvik .
+
+loc:StavenesTunnelen rel:isOn loc:E16 .
+
+loc:Steinklepp rel:isOn loc:E16 .
+
+loc:Strendene rel:near loc:Fodnes .
+
+loc:Stryn rel:isIn loc:Norge .
+
+loc:Torsnes rel:isIn loc:UllensvangKommune .
+
+loc:Troldhaugvegen rel:isIn loc:Paradis .
+
+loc:Ukraina rel:isIn loc:Europa .
+
+loc:Utl%C3%B8pSj%C3%B8 rel:isNear loc:OddaTaxi .
+
+loc:Vaksdal rel:isIn loc:Vestland .
+
+loc:Varegghallen rel:investigatedBy loc:Sartor%26Drange,
+        loc:Vest%20politidistrikt ;
+    rel:isRelatedTo loc:Backe .
+
+loc:Vest%20politidistrikt rel:reportedBy loc:Tore%20Andr%C3%A9%20Brakstad .
+
+loc:Vestlandet rel:isLocatedIn loc:Norway .
+
+loc:VestlandskeTrafikkAS rel:isLocatedIn loc:Kristiansund .
+
+loc:110Vest rel:reportsFireAt loc:Kaupanger .
+
+loc:Almerket rel:isIn loc:UllensvangKommune .
+
+loc:AlverKommune rel:isIn loc:VestlandFylkeskommune .
+
+loc:BolidenOdda rel:isLocatedIn loc:Eitrheim .
+
+loc:Feios rel:isRelatedTo loc:Vik .
+
+loc:Fylkesveg5582 rel:isLocatedIn <http://example.org/locations/%C3%85nneland> .
+
+loc:G%C3%A5gata rel:startsAt loc:Kaifronten .
+
+loc:Gaupne rel:isIn loc:Luster .
+
+loc:H%C3%B8yanger rel:nextVisit loc:passbussen .
+
+loc:Hardingen rel:isAt loc:Klippfiskmuseet ;
+    rel:operatedIn loc:Halhjem-Sandvikv%C3%A5g,
+        loc:Kvanndal-Kinsarvik,
+        loc:N%C3%A6r%C3%B8yfjorden,
+        loc:Sardinia,
+        loc:Sunnhordland ;
+    rel:ownedBy loc:VestlandskeTrafikkAS ;
+    rel:soldTo loc:Italia ;
+    rel:transportedBetween loc:Gudvangen-Kaupanger .
+
+loc:Hordaland rel:isCountyOf loc:Kvanndal .
+
+loc:Husnes rel:isLocatedIn loc:Hardanger .
+
+loc:Kaupangerhalv%C3%B8ya rel:isConnectedTo loc:Ramneberg .
+
+loc:Kvinnherad rel:isIn loc:VestPolitidistrikt .
+
+loc:Loddefjord rel:isIn loc:Bergen .
+
+loc:Lofthus rel:isIn loc:Hardanger ;
+    rel:isLocatedIn loc:Hardanger .
+
+loc:Nekk%C3%B8y rel:isConnectedTo loc:Kinn .
+
+loc:Ullensvang rel:experiencedPopulationIncreaseDueTo loc:Ukraina .
+
+loc:Vegtrafikksentralen rel:reportedBy loc:Andreas%20Egenes%20Herland,
+        loc:Stian%20Hodnekvam ;
+    rel:reportsStatusOf loc:Fylkesveg5582 .
+
+loc:bus rel:from loc:Oslo ;
+    rel:isBetween loc:Borlaugkrysset,
+        loc:Hemsedalsfjellet ;
+    rel:overturnedIn loc:M%C3%B8rkedalen ;
+    rel:to loc:F%C3%B8rde .
+
+loc:E134 rel:closedDueTo loc:Weather ;
+    rel:passesThrough loc:Haukeli .
+
+loc:E39 rel:isIn loc:Hylkje .
+
+loc:Kaupanger rel:direction loc:Sogndal ;
+    rel:isIn loc:Norge .
+
+loc:Luster rel:isLocatedIn loc:Indre%20Sogn .
+
+loc:NordNorge rel:isLocatedIn loc:Norway ;
+    rel:isPartOf loc:Norskekysten .
+
+loc:Oslo rel:isCapitalOf loc:Norway ;
+    rel:isIn loc:Noreg,
+        loc:Norge ;
+    rel:isLocatedIn loc:Norway ;
+    rel:isRelatedTo loc:Hyllestad ;
+    rel:processesApplications loc:pass .
+
+loc:Sunnfjord rel:isLocatedIn loc:Vestland ;
+    rel:isLocationOf loc:all%20inclusive%20opphold .
+
+loc:Vik rel:isIn loc:Terrainvesteringane ;
+    rel:isLocatedIn loc:Norway ;
+    rel:nextVisit loc:passbussen .
+
+<http://example.org/locations/%C3%85rdal> rel:hasFacility loc:passbussen ;
+    rel:isIn loc:Indre%20Sogn ;
+    rel:isLocatedIn loc:Indre%20Sogn ;
+    rel:lostFacility loc:lensmannskontor ;
+    rel:nearestFacility loc:Sogndal .
+
+loc:E16 rel:connects loc:Arna,
+        loc:Aurland,
+        loc:Bergen,
+        loc:V%C3%A5gsbotn,
+        loc:Voss ;
+    rel:includes loc:Flenjatunnelen,
+        loc:Gudvangatunnelen,
+        loc:L%C3%A6rdalstunnelen ;
+    rel:isClosed loc:StavenesTunnelen ;
+    rel:isIn loc:L%C3%A6rdal,
+        loc:N%C3%A6r%C3%B8ydalen,
+        loc:Vaksdal,
+        loc:Voss ;
+    rel:isSafe loc:Filefjell ;
+    rel:status loc:TunnelArbeid .
+
+loc:F%C3%B8rde rel:isIn loc:Norge ;
+    rel:isLocationOf loc:hjarterehabiliteringskurs .
+
+loc:Fyllingsdalen rel:isIn loc:VestPolitidistrikt .
+
+loc:Indre%20Sogn rel:isLocatedIn loc:Norway .
+
+loc:Kalv%C3%A5g rel:isIn loc:Bremanger .
+
+loc:L%C3%A6rdal rel:hadVisit loc:passbussen ;
+    rel:isLocatedIn loc:Norway ;
+    rel:isNear loc:Aurland .
+
+loc:R%C3%B8ldal rel:locatedIn loc:H%C3%A5radalen ;
+    rel:onRoute loc:E134 .
+
+loc:UllensvangKommune rel:isIn loc:Hordaland ;
+    rel:isLocatedIn loc:Region .
+
+loc:Odda rel:isIn loc:Hardanger,
+        loc:Ullensvang ;
+    rel:isLocatedIn loc:Hardanger .
+
+loc:VestPolitidistrikt rel:isIn loc:Bergen .
+
+loc:Voss rel:isConnectedTo loc:Bergen ;
+    rel:isDestinationOf loc:Personbilen ;
+    rel:isIn loc:Norge .
+
+loc:Aurland rel:isConnectedTo loc:Fr%C3%B8nningen ;
+    rel:isLocatedIn loc:Indre%20Sogn ;
+    rel:isNextTo loc:Fl%C3%A5m .
+
+loc:Sogndal rel:isConnectedTo loc:Aurland ;
+    rel:isIn loc:Norge ;
+    rel:isNextTo loc:Bergen .
+
+loc:Vestland rel:isCountyOf loc:Hardingen,
+        loc:Kvanndal ;
+    rel:isIn loc:Norway .
+
+loc:Bergen rel:isDestinationOf loc:Lastebilen ;
+    rel:isIn loc:Norge,
+        loc:VestPolitidistrikt ;
+    rel:isLocatedIn loc:Vest ;
+    rel:skips loc:Leirgulen .
+
