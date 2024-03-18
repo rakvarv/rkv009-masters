@@ -40,6 +40,8 @@ class KnowledgeGraphCreator:
 
         # Add relationships to the graph
         for relationship in self.relationships:
+            print("Source:", relationship['source'])
+            print("Target:", relationship['target'])
             source = LOC[quote(relationship['source'])]  # Encode source location name
             target = LOC[quote(relationship['target'])]  # Encode target location name
             relation = REL[relationship['relation']]
