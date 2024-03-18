@@ -6,7 +6,7 @@ class Config(object):
     SECRET_KEY = os.getenv("OPENAI_API_KEY")
     DEBUG = False
     TESTING = False 
-    OPENAI_MODEL = 'gpt-4-1106-preview'
+    OPENAI_MODEL = 'gpt-3.5-turbo-1106'
     GPT3_MODEL = "gpt-3.5-turbo-1106"
     JSON_PROMPT = "{newsContent}"
 
